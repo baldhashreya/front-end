@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a2c6cb;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 200px;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.qrcode-content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.qrcode-content p {
+  font-size: 14px;
+  color: #555;
+}
