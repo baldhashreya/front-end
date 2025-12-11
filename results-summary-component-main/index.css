@@ -1,0 +1,150 @@
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.main-container {
+  display: flex;
+  background: white;
+  width: 700px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+
+.result-container {
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #7857ff, #2e2ce6);
+  border-radius: 25px;
+}
+
+.result-container h3 {
+  color: hsl(221, 100%, 96%);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #2e2ce6, #7857ff);
+}
+
+.score-number {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.score-total {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.result-container p {
+  font-size: 14px;
+  width: 80%;
+  margin: 10px auto;
+  color: hsl(221, 100%, 96%);
+  opacity: 0.9;
+}
+
+
+.summary-container {
+  width: 400px;
+  padding: 30px 40px;
+  background: white;
+}
+
+.summary-container h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-score span:first-child {
+  font-weight: 700;
+  color: black;
+}
+
+.item-score span:last-child {
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+
+.continue-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(to right, #7857ff, #2e2ce6);
+
+  transition: 0.2s ease-in-out;
+}
+
+.continue-button:hover {
+  background: linear-gradient(to right, #2e2ce6, #7857ff);
+}

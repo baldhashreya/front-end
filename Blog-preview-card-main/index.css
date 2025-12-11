@@ -1,0 +1,73 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  height: 100vh;         
+  margin: 0;         
+}
+
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;  
+  width: 250px;
+  height: 370px;
+}
+
+.artical-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.category {
+  color: black;
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.published-date{
+  font-size: 12px;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  /* margin-top: 5px; */
+}
+
+.title h3 {
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+  margin-top: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author p{
+  font-size: 14px;
+  font-weight: bold;
+}
