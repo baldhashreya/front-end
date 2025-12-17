@@ -1,0 +1,129 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: "Red Hat Display";
+}
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .info-image {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+}
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  /* font-size: 27px; */
+  font-weight: 1000;
+  margin-top: 30px;
+  color: hsl(223, 47%, 23%);
+}
+
+.summary {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin: 0 20px;
+    line-height: 1.5;
+}
+
+.plan-details{
+    background-color: aliceblue;
+    display: flex;
+    width: 300px;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.plan-details img {
+    height: 50px;
+}
+
+.plan-info{
+    margin-left: 15px;
+    align-items: center;
+}
+
+.plan-info .title {
+    margin: 0;
+    color: hsl(223, 47%, 23%); 
+
+}
+
+.plan-info p{
+    color: hsl(224, 23%, 55%)
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-info a {
+    margin-left: 10px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content-l{
+    margin-left: 89px;
+}
+
+.price {
+    margin: 0;
+}
+
+.proceed-btn {
+    background-color: hsl(227, 60%, 45%);
+    color: white;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px rgba(56, 33, 255, 0.2);
+}
+
+.cancel-btn {
+    background: none;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.content-l a {
+    font-size: 13px;
+}
+
+.content-l a:hover {
+    color: hsl(308, 45%, 38%);
+}
+
+.proceed-btn:hover {
+    background-color: hsl(223, 47%, 23%);
+}
