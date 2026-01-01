@@ -20,18 +20,18 @@ ul li {
 .sedans {
   background-color: hsl(31, 77%, 52%);
   border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px
+  border-bottom-left-radius: 15px;
 }
 
 .sedans button {
-    color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
 }
 .suvs {
   background-color: hsl(184, 100%, 22%);
 }
 
 .suvs button {
-    color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
 }
 .luxury {
   background-color: hsl(179, 100%, 13%);
@@ -40,36 +40,36 @@ ul li {
 }
 
 .luxury button {
-    color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
 }
 
 li {
-    padding: 60px;
+  padding: 60px;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 p {
-    color: rgb(201, 203, 203);
-    padding-top:15px;
+  color: rgb(201, 203, 203);
+  padding-top: 15px;
 }
 
 button {
-    background-color: rgb(249, 241, 230);
-    border: none;
-    border-radius: 25px;
-    margin-top: 50px;
-    height: 50px;
-    width: 150px;
-    font-weight: 700;
-    cursor: pointer;
+  background-color: rgb(249, 241, 230);
+  border: none;
+  border-radius: 25px;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: inherit;
-    border: 3px solid white;
-    color: white;
-    border-radius: 25px;
+  background-color: inherit;
+  border: 3px solid white;
+  color: white;
+  border-radius: 25px;
 }
