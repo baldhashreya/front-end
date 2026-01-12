@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(276, 100%, 97%);
+}
+
+.container {
+  max-width: 600px;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  font-size: 25px;
+}
+
+.header__logo {
+  margin-right: 10px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 20px 0;
+}
+
+.accordion__item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__question {
+  font-size: 18px;
+}
+
+.accordion__question:hover {
+  color: hsl(284, 89%, 39%);
+  cursor: pointer;
+}
+
+.accordion__answer {
+  margin-top: 10px;
+  color: hsl(240, 6%, 50%);
+  font-size: 16px;
+  line-height: 1.3;
+  display: none;
+}
+
+.accordion__item.active .accordion__answer {
+  display: block;
+}
+
+.accordion__item.active img {
+  content: url("./assets/images/icon-minus.svg");
+}
