@@ -1,0 +1,101 @@
+.container {
+  background-color: hsla(213, 20%, 18%, 0.543);
+  width: 300px;
+  margin: 100px auto;
+  padding: 25px;
+  border-radius: 20px;
+  height: 280px;
+}
+
+.img-container {
+  background-color: hsla(213, 20%, 18%, 0.37);
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.img-container img {
+  width: 13px;
+  height: 13px;
+}
+
+.container h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.container p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.rating-button {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: hsla(213, 20%, 18%, 0.854);
+  color: gray;
+}
+
+.rating-div {
+  margin: 15px 10px;
+}
+
+.rating-button:active {
+  background-color: white;
+  color: hsla(213, 20%, 18%, 0.854);
+}
+
+.submit-btn {
+  background-color: white;
+  color: hsla(213, 20%, 18%, 0.854);
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.rating-button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsla(213, 20%, 18%, 0.854);
+}
+
+.rating-button:active,
+.rating-button.active {
+  background-color: white;
+  color: hsla(213, 20%, 18%, 0.854);
+}
+
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thankyou-container img {
+  width: 100px;
+  height: 80px;
+}
+
+.score {
+  width: 100%;
+  background-color: hsla(213, 20%, 18%, 0.854);
+  color: hsl(25, 97%, 53%);
+  height: 25px;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para {
+  justify-items: center;
+  text-align: center;
+  font-size: 5px;
+}
