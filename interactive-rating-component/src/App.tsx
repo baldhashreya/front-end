@@ -1,5 +1,7 @@
 import "./App.css";
 import { useState } from "react";
+import Icon from "./assets/icon-star.svg";
+import Thankyou from "./assets/illustration-thank-you.svg";
 
 function App() {
   const [selectedRating, setSelectedRating] = useState<number>(0);
@@ -15,7 +17,10 @@ function App() {
       {!isSubmitted ?
         <div className="rating-container">
           <div className="img-container">
-            <img src="../src/assets/icon-star.svg" />
+            <img
+              src={Icon}
+              alt="Icon"
+            />
           </div>
           <h3>How did we do?</h3>
           <p>
@@ -45,7 +50,10 @@ function App() {
           </button>
         </div>
       : <div className="thankyou-container">
-          <img src="../src/assets/illustration-thank-you.svg" />
+          <img
+            src={Thankyou}
+            alt="Thankyou"
+          />
           <p className="score">You selected {selectedRating} out of 5</p>
           <h3>Thank you!</h3>
           <p className="para">
