@@ -1,0 +1,69 @@
+.main-container {
+  width: 800px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: 100;
+  color: hsl(0, 0%, 59%);
+}
+
+span {
+  color: black;
+  font-weight: 800;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.input-block {
+  margin-top: 25px;
+}
+
+.login-button {
+  border: none;
+  color: white;
+  border-radius: 18px;
+  background-color: blue;
+  margin-left: 25px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.dashboard-img {
+  width: 450px;
+  margin-top: 50px;
+  height: 200px;
+}
+
+.nav-button {
+  margin-top: 45px;
+}
+
+.nav-button button {
+  margin-right: 20px;
+  background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.244);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 6px;
+  color: blue;
+  height: 40px;
+}
+
+.nav {
+  color: gray;
+}
