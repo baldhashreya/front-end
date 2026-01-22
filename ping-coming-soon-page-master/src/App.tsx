@@ -11,7 +11,7 @@ function App() {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  const handleEmailChange = (e) => {
+  const handleEmailChange = (e: any) => {
     const value = e.target.value;
     setEmail(value);
 
@@ -60,7 +60,12 @@ function App() {
           }}
         />
 
-        <button className="login-button" disabled={Boolean(error) || !email}>Notify Me</button>
+        <button
+          className="login-button"
+          disabled={Boolean(error) || !email}
+        >
+          Notify Me
+        </button>
       </div>
 
       <img
