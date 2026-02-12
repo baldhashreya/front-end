@@ -103,7 +103,7 @@ export function Navigation() {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "12px 24px",
-        margin: "50px",
+        margin: "30px 50px",
       }}
     >
       <img
