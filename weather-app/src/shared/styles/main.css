@@ -1,0 +1,5 @@
+.main-header {
+    justify-content: center;
+    display: flex;
+    color: hsl(250, 6%, 84%);
+}
