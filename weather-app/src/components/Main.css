@@ -1,0 +1,18 @@
+.main-session{
+    display: flex;
+    padding: 50px;
+}
+
+.main-session__content {
+    background-image: url('../assets/bg-today-large.svg');
+    width: 800px;
+    height: 285px;
+}
+
+.current-weather {
+    display: flex;
+}
+
+.current-weather__header {
+    justify-content: center;
+}

@@ -94,16 +94,15 @@ const styles = {
     color: "hsl(240, 6%, 75%)",
   },
 };
-export function Navigation() {
+export default function Navigation() {
   const [unit, setUnit] = useState("c");
   return (
     <nav
       style={{
         display: "flex",
-        alignItems: "center",
         justifyContent: "space-between",
-        padding: "12px 24px",
-        margin: "30px 50px",
+        padding: "12px 0px",
+        margin: "15px 40px",
       }}
     >
       <img
@@ -128,7 +127,7 @@ export function Navigation() {
           }}
           MenuProps={{
             anchorReference: "anchorPosition",
-            anchorPosition: { top: 100, left: window.innerWidth - 225 },
+            anchorPosition: { top: 100, left: window.innerWidth - 180},
             PaperProps: {
               sx: styles.menuPaper,
             },
