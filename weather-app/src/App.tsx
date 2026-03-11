@@ -1,13 +1,16 @@
 
 import "./App.css";
+import SearchBar from "./components/SearchBar";
+import Navigation from "./components/Navigation";
 import Main from "./components/Main";
-import { Navigation } from "./components/Navigation";
 
 function App() {
   return (
     <>
       <Navigation />
+      <SearchBar />
       <Main />
+
     </>
   );
 }
