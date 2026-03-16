@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <article class="article">
+        <div class="article__img">
+          <img src="./images/hero-desktop.jpg" alt="hero" />
+        </div>
+        <div class="article__text">
+          <img src="./images/logo.svg" alt="logo" />
+          <div class="article__header">
+            <h1><span>We're</span></h1>
+            <h1>coming soon</h1>
+          </div>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Email Address"
+              class="email-input"
+            />
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="icon-error"
+              id="iconError"
+            />
+            <button id="submitBtn" onclick="validateEmail()">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <!-- Error message shown below input -->
+          <p class="error-message" id="errorMessage">
+            Please provide a valid email
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <script>
+      function validateEmail() {
+        const input = document.getElementById("emailInput");
+        const iconError = document.getElementById("iconError");
+        const errorMessage = document.getElementById("errorMessage");
+        const wrapper = document.querySelector(".input-wrapper");
+
+        // Basic email regex pattern
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const isValid = emailPattern.test(input.value.trim());
+
+        if (!isValid) {
+          // Show error state
+          input.classList.add("input-error");
+          iconError.classList.add("visible");
+          errorMessage.classList.add("visible");
+          wrapper.classList.add("wrapper-error");
+        } else {
+          // Clear error state
+          input.classList.remove("input-error");
+          iconError.classList.remove("visible");
+          errorMessage.classList.remove("visible");
+          wrapper.classList.remove("wrapper-error");
+
+          // Optional: give user success feedback
+          alert("Thank you! You've been added to the list.");
+          input.value = "";
+        }
+      }
+
+      // Also validate on Enter key press
+      document.getElementById("emailInput").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          validateEmail();
+        }
+      });
+
+      // Clear error as user types
+      document.getElementById("emailInput").addEventListener("input", function () {
+        const iconError = document.getElementById("iconError");
+        const errorMessage = document.getElementById("errorMessage");
+        const wrapper = document.querySelector(".input-wrapper");
+
+        this.classList.remove("input-error");
+        iconError.classList.remove("visible");
+        errorMessage.classList.remove("visible");
+        wrapper.classList.remove("wrapper-error");
+      });
+    </script>
+  </body>
+</html>
